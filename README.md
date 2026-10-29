@@ -9,6 +9,9 @@
 ![Ventura+](https://img.shields.io/badge/Ventura%2B-no%20video-red)
 ![SMBIOS](https://img.shields.io/badge/SMBIOS-MacPro6%2C1-lightgrey)
 
+<img width="586" height="351" alt="window" src="https://github.com/user-attachments/assets/9a79c7ed-6826-4825-b74b-31be96dd8f94" />
+
+
 [English](#english) · [Русский](#русский)
 
 </div>
@@ -75,7 +78,7 @@ With all 4 DIMMs installed the BIOS produced a wrong SMBIOS memory table: a 16 G
 
 1. **`PlatformInfo` is empty.** Generate your own `SystemSerialNumber`, `MLB`, `SystemUUID` and `ROM` (for example with OpenCore Auxiliary Tools or `macserial`).
 2. **Edit `CustomMemory`** for your DIMMs.
-3. **BIOS:** UEFI boot, CFG Lock disabled. VT-d Disabled, 4G Aboce Decoding Enable, EHCI-Handoff Enabled
+3. **BIOS:** UEFI boot, CFG Lock disabled. VT-d Disabled, 4G Above Decoding Enabled, EHCI-Handoff Enabled
 4. Make a backup of your current EFI first.
 
 ### 🔌 Notes
@@ -85,7 +88,7 @@ With all 4 DIMMs installed the BIOS produced a wrong SMBIOS memory table: a 16 G
 
 ### 🙏 Credits
 
-[OpenCore / Acidanthera](https://github.com/acidanthera), [Dortania guides](https://dortania.github.io/), [OpenCore Legacy Patcher](https://github.com/dortania/OpenCore-Legacy-Patcher), ssdtPRGen, [Антико 4PDA](https://4pda.to/forum/index.php?showuser=4709617) for helping to create the EFI folder
+[OpenCore / Acidanthera](https://github.com/acidanthera), [Dortania guides](https://dortania.github.io/), [OpenCore Legacy Patcher](https://github.com/dortania/OpenCore-Legacy-Patcher), ssdtPRGen, [Антико 4PDA](https://4pda.to/forum/index.php?showuser=4709617) for helping to create the EFI-folder
 ### ⚖️ Disclaimer
 
 Provided **as is**, without any warranty. You use it at your own risk. All third-party components (kexts, drivers, OpenCore) belong to their authors and keep their own licenses. No Apple software is included.
@@ -117,7 +120,7 @@ Provided **as is**, without any warranty. You use it at your own risk. All third
 | ОЗУ: все 32 ГБ (через `CustomMemory`) | ✅ |
 | USB (EHCI) | ✅ |
 | Звук (Realtek ALC662, layout 11) | ✅ |
-| Ускорение GPU, Ethernet и остальное | ✅  |
+| Ускорение GPU, Ethernet и остальное | ✅ |
 | Сон (S3 на плате не заведён, отключён через `pmset`) | ❌ |
 | Ventura и новее: ставится, но **нет картинки** | ❌ |
 
@@ -152,7 +155,7 @@ DSDT собран по дампу `X79GA00R`. Для другой версии B
 
 1. **`PlatformInfo` пустой.** Сгенерируй свои `SystemSerialNumber`, `MLB`, `SystemUUID` и `ROM` (например, в OpenCore Auxiliary Tools или через `macserial`).
 2. **Поправь `CustomMemory`** под свои планки.
-3. **BIOS:** UEFI boot, CFG Lock Отключен. VT-d Отключен, 4G Aboce Decoding Включен, EHCI-Handoff Включен
+3. **BIOS:** UEFI boot, CFG Lock Отключен. VT-d Отключен, 4G Above Decoding Включен, EHCI-Handoff Включен
 4. Сначала сделай бэкап своего текущего EFI.
 
 ### 🔌 Заметки
@@ -162,7 +165,7 @@ DSDT собран по дампу `X79GA00R`. Для другой версии B
 
 ### 🙏 Благодарности
 
-[OpenCore / Acidanthera](https://github.com/acidanthera), [руководства Dortania](https://dortania.github.io/), [OpenCore Legacy Patcher](https://github.com/dortania/OpenCore-Legacy-Patcher), ssdtPRGen, [Антико 4PDA](https://4pda.to/forum/index.php?showuser=4709617) за помощь в создании EFI папки
+[OpenCore / Acidanthera](https://github.com/acidanthera), [руководства Dortania](https://dortania.github.io/), [OpenCore Legacy Patcher](https://github.com/dortania/OpenCore-Legacy-Patcher), ssdtPRGen, [Антико 4PDA](https://4pda.to/forum/index.php?showuser=4709617) за помощь в создании EFI-папки
 
 ### ⚖️ Отказ от ответственности
 
