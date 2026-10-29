@@ -40,7 +40,7 @@ A working OpenCore EFI for a cheap Chinese **X79** board (Atermiter X79G rev 1.6
 | RAM: all 32 GB (via `CustomMemory`) | ✅ |
 | USB (EHCI) | ✅ |
 | Audio (Realtek ALC662, layout 11) | ✅ |
-| GPU acceleration, Ethernet, other devices | ❓ *(fill in)* |
+| GPU acceleration, Ethernet, other devices | ✅ |
 | Sleep (S3 is not wired on this board; disabled via `pmset`) | ❌ |
 | Ventura and newer: installs, but **no video output** | ❌ |
 
@@ -75,18 +75,17 @@ With all 4 DIMMs installed the BIOS produced a wrong SMBIOS memory table: a 16 G
 
 1. **`PlatformInfo` is empty.** Generate your own `SystemSerialNumber`, `MLB`, `SystemUUID` and `ROM` (for example with OpenCore Auxiliary Tools or `macserial`).
 2. **Edit `CustomMemory`** for your DIMMs.
-3. **BIOS:** UEFI boot, CFG Lock disabled. *(Add your own exact BIOS settings here.)*
+3. **BIOS:** UEFI boot, CFG Lock disabled. VT-d Disabled, 4G Aboce Decoding Enable, EHCI-Handoff Enabled
 4. Make a backup of your current EFI first.
 
 ### 🔌 Notes
 
 - Hold the power button for ~2 seconds to get the shutdown dialog (a short press does nothing because sleep is disabled).
-- Disabled in the config and kept only for reference: `ASPP-Override`, `CryptexFixup` (needed for Ventura).
+- Disabled in the config and kept only for reference: `ASPP-Override`, `CryptexFixup` (needed for Ventura and newer).
 
 ### 🙏 Credits
 
-[OpenCore / Acidanthera](https://github.com/acidanthera), [Dortania guides](https://dortania.github.io/), [OpenCore Legacy Patcher](https://github.com/dortania/OpenCore-Legacy-Patcher), ssdtPRGen.
-
+[OpenCore / Acidanthera](https://github.com/acidanthera), [Dortania guides](https://dortania.github.io/), [OpenCore Legacy Patcher](https://github.com/dortania/OpenCore-Legacy-Patcher), ssdtPRGen, [Антико 4PDA](https://4pda.to/forum/index.php?showuser=4709617) for helping to create the EFI folder
 ### ⚖️ Disclaimer
 
 Provided **as is**, without any warranty. You use it at your own risk. All third-party components (kexts, drivers, OpenCore) belong to their authors and keep their own licenses. No Apple software is included.
@@ -118,7 +117,7 @@ Provided **as is**, without any warranty. You use it at your own risk. All third
 | ОЗУ: все 32 ГБ (через `CustomMemory`) | ✅ |
 | USB (EHCI) | ✅ |
 | Звук (Realtek ALC662, layout 11) | ✅ |
-| Ускорение GPU, Ethernet и остальное | ❓ *(дополни)* |
+| Ускорение GPU, Ethernet и остальное | ✅  |
 | Сон (S3 на плате не заведён, отключён через `pmset`) | ❌ |
 | Ventura и новее: ставится, но **нет картинки** | ❌ |
 
@@ -153,17 +152,17 @@ DSDT собран по дампу `X79GA00R`. Для другой версии B
 
 1. **`PlatformInfo` пустой.** Сгенерируй свои `SystemSerialNumber`, `MLB`, `SystemUUID` и `ROM` (например, в OpenCore Auxiliary Tools или через `macserial`).
 2. **Поправь `CustomMemory`** под свои планки.
-3. **BIOS:** загрузка в UEFI, CFG Lock выключен. *(Допиши сюда свои точные настройки BIOS.)*
+3. **BIOS:** UEFI boot, CFG Lock Отключен. VT-d Отключен, 4G Aboce Decoding Включен, EHCI-Handoff Включен
 4. Сначала сделай бэкап своего текущего EFI.
 
 ### 🔌 Заметки
 
 - Чтобы выключить компьютер, удерживай кнопку питания около 2 секунд (короткое нажатие ничего не делает, потому что сон отключён).
-- В конфиге выключены и лежат только для справки: `ASPP-Override`, `CryptexFixup` (нужны для Ventura).
+- В конфиге выключены и лежат только для справки: `ASPP-Override`, `CryptexFixup` (нужны для Ventura и выше).
 
 ### 🙏 Благодарности
 
-[OpenCore / Acidanthera](https://github.com/acidanthera), [руководства Dortania](https://dortania.github.io/), [OpenCore Legacy Patcher](https://github.com/dortania/OpenCore-Legacy-Patcher), ssdtPRGen.
+[OpenCore / Acidanthera](https://github.com/acidanthera), [руководства Dortania](https://dortania.github.io/), [OpenCore Legacy Patcher](https://github.com/dortania/OpenCore-Legacy-Patcher), ssdtPRGen, [Антико 4PDA](https://4pda.to/forum/index.php?showuser=4709617) за помощь в создании EFI папки
 
 ### ⚖️ Отказ от ответственности
 
