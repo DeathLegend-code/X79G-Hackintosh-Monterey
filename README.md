@@ -125,7 +125,7 @@ With all 4 DIMMs installed the BIOS produced a wrong SMBIOS memory table: a 16 G
 ### 🔌 Notes
 
 - Hold the power button for ~2 seconds to get the shutdown dialog (a short press does nothing because sleep is disabled).
-- `ASPP-Override` is disabled in the config and kept only for reference. `CryptexFixup` is needed for Ventura and newer, so please enable it for those versions.
+- `ASPP-Override` is enabled in the config and kept only for reference. `CryptexFixup` is needed for Ventura and newer, so please enable it for those versions.
 
 ### 🙏 Credits
 
@@ -231,7 +231,7 @@ DSDT собран по дампу `X79GA00R`. Для другой версии B
 ### 🔌 Заметки
 
 - Чтобы выключить компьютер, удерживайте кнопку питания около 2 секунд (короткое нажатие ничего не делает, потому что сон отключён).
-- `ASPP-Override` в конфиге выключен и лежит только для справки. `CryptexFixup` нужен для Ventura и новее, поэтому для этих версий, пожалуйста, включите его.
+- `ASPP-Override` в конфиге включен и лежит только для справки. `CryptexFixup` нужен для Ventura и новее, поэтому для этих версий, пожалуйста, включите его.
 
 ### 🙏 Благодарности
 
