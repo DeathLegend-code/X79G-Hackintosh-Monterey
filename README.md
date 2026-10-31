@@ -9,6 +9,7 @@
 ![Ventura+](https://img.shields.io/badge/Ventura%2B-with%20OCLP%20patches-orange)
 ![SMBIOS](https://img.shields.io/badge/SMBIOS-MacPro6%2C1%20%2F%20MacPro7%2C1-lightgrey)
 
+<sub><b>macOS Monterey 12.7.6</b> · MacPro6,1</sub>
 <br>
 
 <p align="center">
@@ -20,7 +21,6 @@
 <p align="center">
   <img width="327" height="596" alt="macOS Ventura 13.7.8, MacPro7,1" src="https://github.com/user-attachments/assets/65c55f48-d3f4-4c1c-892a-bbaaf6c87594" />
   <br>
-  <sub><b>macOS Monterey 12.7.6</b> · MacPro6,1</sub>
 </p>
 
 <p align="center">
