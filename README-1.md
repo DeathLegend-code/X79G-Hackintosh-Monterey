@@ -9,8 +9,10 @@
 ![Ventura+](https://img.shields.io/badge/Ventura%2B-with%20OCLP%20patches-orange)
 ![SMBIOS](https://img.shields.io/badge/SMBIOS-MacPro6%2C1%20%2F%20MacPro7%2C1-lightgrey)
 
-<img width="586" height="351" alt="window" src="https://github.com/user-attachments/assets/9a79c7ed-6826-4825-b74b-31be96dd8f94" />
 
+<img width="586" height="351" alt="window" src="https://github.com/user-attachments/assets/9a79c7ed-6826-4825-b74b-31be96dd8f94" /> 
+
+<img width="327" height="596" alt="window" src="https://github.com/user-attachments/assets/65c55f48-d3f4-4c1c-892a-bbaaf6c87594" />
 
 [English](#english) · [Русский](#русский)
 
