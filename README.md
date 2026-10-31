@@ -60,13 +60,13 @@ A working OpenCore EFI for a budget Chinese **X79** board (Atermiter X79G rev 1.
 | Ventura and newer: install with acceleration disabled, then apply OCLP root patches (see [below](#-installing-ventura-and-newer)) | ⚠️ |
 | Sleep (S3 is not wired on this board; disabled via `pmset`) | ❌ |
 
-Please note that on Ventura and newer some minor graphical artifacts may remain even after patching (for example, a pixelated Dock or a translucent window during the minimize animation). They do not affect everyday use. If you run into graphics problems, or find the cause or a fix, please let us know by opening an [Issue](../../issues).
+Please note that on Ventura issue some minor graphical artifacts may remain even after patching (for example, a pixelated Dock or a translucent window during the minimize animation). They do not affect everyday use. If you run into graphics problems, or find the cause or a fix, please let us know by opening an [Issue](../../issues).Possible investigative causes (theory): incorrect KDK, dead patches, possibly a Ventura issue, as it hasn’t been observed in other versions.
 
 > ⚠️ **Graphical glitches (Ventura issue).** Random pixelated or mosaic artifacts may appear on blurred and translucent elements (Dock, tooltips, widgets, scroll bars). They often do not show up in screenshots, only on the real screen.
 >
 > **Workaround:** switch to the **Light** appearance and enable **System Settings → Accessibility → Display → Reduce transparency**.
 >
-> 👍 **Recommendation:** install **macOS Sonoma** instead.
+> 👍 **Recommendation:** install **macOS Sonoma and newer** instead.
 
 ### 📥 Which release to download
 
@@ -176,13 +176,14 @@ Provided **as is**, without any warranty, and you use it at your own risk. All t
 | Ventura и новее: установка с отключённым ускорением, затем root-патчи OCLP (см. [ниже](#-установка-ventura-и-новее)) | ⚠️ |
 | Сон (S3 на плате не заведён, отключён через `pmset`) | ❌ |
 
-Обратите внимание: на Ventura и новее после патчей могут остаться небольшие графические артефакты (например, «пиксельный» Dock или прозрачное окно при анимации сворачивания). На повседневную работу они не влияют. Если вы столкнётесь с проблемами графики или найдёте причину или решение, пожалуйста, напишите об этом в [Issue](../../issues).
+Обратите внимание: на Ventura трабл после патчей могут остаться небольшие графические артефакты (например, «пиксельный» Dock или прозрачное окно при анимации сворачивания). На повседневную работу они не влияют. Если вы столкнётесь с проблемами графики или найдёте причину или решение, пожалуйста, напишите об этом в [Issue](../../issues).
+Возможные следственные причины (теория): неправильный KDK, Мёртвые патчи, Возможно трабл Ventura так как на других версиях не замечено
 
 > ⚠️ **Графические глюки (Ventura трабл).** Могут появляться случайные «пиксельные» или мозаичные артефакты на размытых и прозрачных элементах (Dock, подсказки, виджеты, полосы прокрутки). На скриншотах их часто не видно, только на реальном экране.
 >
 > **Решение:** включите **светлую тему** и **Системные настройки → Универсальный доступ → Дисплей → Уменьшить прозрачность**.
 >
-> 👍 **Рекомендация:** лучше установите **macOS Sonoma**.
+> 👍 **Рекомендация:** лучше установите **macOS Sonoma и новее**.
 
 ### 📥 Какой релиз скачать
 
